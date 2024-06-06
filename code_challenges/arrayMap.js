@@ -5,7 +5,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-function hasContiguousSubarrayWithSum(arr, target) {
+function contiguousArraySumAsTarget(arr, target) {
     let start = 0;
     let currentSum = 0;
     
@@ -33,7 +33,7 @@ rl.question('Enter the elements of the array separated by spaces: ', (input) => 
         const target = parseInt(targetInput);
         console.log('Target Sum:', target);
         
-        const result = hasContiguousSubarrayWithSum(arr, target);
+        const result = contiguousArraySumAsTarget(arr, target);
         console.log('Does a contiguous subarray exist with the given sum?', result);
 
         rl.close();
