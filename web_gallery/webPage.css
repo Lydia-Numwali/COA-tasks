@@ -79,14 +79,18 @@ body {
 }
 
 
-@media (max-width: 768px) {
-    .gallery-image {
-        min-width: 50%;
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery-image {
-        min-width: 100%;
-    }
+@media(max-width: 767px) { 
+    .caption { 
+        display: none;
+     }
+ }
+@media(min-width: 768px) {
+     .gallery-image { 
+        flex: 1 1 25%; 
+    } 
+     .caption { 
+        display: block; 
+        bottom: 40px;
+        left: 40px; 
+    } 
 }
