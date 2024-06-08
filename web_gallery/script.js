@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     galleryItems.forEach(item => {
         item.addEventListener('mouseover', () => {
-            item.style.filter = 'blur(5px) grayscale(80%)';
+            item.style.filter = 'blur(5px) grayscale(100%)';
         });
 
         item.addEventListener('mouseout', () => {
